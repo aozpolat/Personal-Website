@@ -3,12 +3,13 @@
 }
 
 :root {
-    --black: #071A26;
+    --black: #171321;
     --white: #FDFCFC;
     --cream: #F2E7DC;
-    --blue: #027373;
-    --mblue: #009688;
-    --lblue: #44E3D3;
+    --blue: #04B2D9;
+    --orange: #F2A20C;
+    --dblue:#048ABF;
+    --green: #B7D996;
     --nunito: 'Nunito', sans-serif;
     --reem-kufi: 'Reem Kufi Fun', sans-serif;
 }
@@ -38,7 +39,7 @@ nav {
 }
 
 nav .logo {
-    color: var(--cream);
+    color: var(--green);
 }
 nav h1 {
     text-align: center;
@@ -65,7 +66,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--lblue);
+    color: var(--blue);
 }
 
 nav .icon {
@@ -74,11 +75,11 @@ nav .icon {
 }
 
 nav .icon:hover {
-    color: var(--lblue);
+    color: var(--blue);
 }
 
 nav .button a{
-    background-color: var(--lblue);
+    background-color: var(--blue);
     color: var(--black);
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -87,7 +88,7 @@ nav .button a{
 }
 
 nav .button a:hover {
-    background-color: var(--mblue);
+    background-color: var(--dblue);
 }
 
 /* info */
@@ -108,7 +109,7 @@ nav .button a:hover {
     display: block;
     font-size: 3rem;
     margin: 1rem 0 1.5rem 0;
-    color: var(--lblue);
+    color: var(--green);
     font-family: var(--reem-kufi);
 
 }
@@ -140,23 +141,23 @@ nav .button a:hover {
     width: 100%;
     margin: 1rem 0 2rem 0;
     padding: 1rem;
-    border-top: 1px solid var(--lblue);
-    border-left: 1px solid var(--lblue);
+    border-top: 1px solid var(--orange);
+    border-left: 1px solid var(--orange);
     border-radius: 20px;
 }
 
 #projects h3 {
-    color: var(--lblue);
+    color: var(--green);
     font-size: 2.2rem;
     margin-bottom: 0.5rem;
     font-family: var(--reem-kufi);
 }
 
 #projects .description {
-    background-color: var(--black);
+    background-color: #071A26;
     padding: 2rem;
     /* border: 1px solid var(-); */
-    box-shadow: -1px 1px var(--cream);
+    box-shadow: -1px 1px #123348;
     border-radius: 10px;
 }
 
@@ -170,13 +171,23 @@ nav .button a:hover {
     font-size: 1.2rem;
 }
 
+#projects li {
+    padding: 0.5rem;
+}
+
+#projects li:hover {
+    background-color: var(--dblue);
+    border-radius: 5px;
+    cursor: default;
+}
+
 #projects .icon {
     font-size: 2.5rem;
     color: var(--cream);
 }
 
 #projects .icon:hover {
-    color: var(--lblue);
+    color: var(--green);
 }
 
 #projects ul span {
@@ -185,6 +196,7 @@ nav .button a:hover {
 
 #projects .technologies {
     font-family: var(--reem-kufi);
+    /* color: #F29F05; */
 }
 
 #projects .title {
@@ -225,12 +237,12 @@ footer .icon {
 }
 
 footer .icon:hover {
-    color: var(--lblue)
+    color: var(--blue)
 }
 
 .divider {
     height: 1px;
-    background-color: var(--lblue);
+    background: linear-gradient(90deg, rgba(183,217,150,1) 0%, rgba(4,178,217,1) 100%);
 }
 
 @media (min-width: 800px) {
@@ -277,7 +289,7 @@ footer .icon:hover {
     #projects .reverse img {
         grid-column: 6/11;
         border-left: none;
-        border-right:  1px solid var(--lblue);
+        border-right:  1px solid var(--orange);
     }
 
     #projects .reverse .project-detail {
@@ -293,4 +305,3 @@ footer .icon:hover {
         justify-content: flex-start;
     }
 }
-
