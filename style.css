@@ -7,8 +7,8 @@
     --white: #FDFCFC;
     --cream: #F2E7DC;
     --blue: #027373;
-    --mblue: #038C7F;
-    --lblue: #A9D9D0;
+    --mblue: #009688;
+    --lblue: #44E3D3;
     --nunito: 'Nunito', sans-serif;
     --reem-kufi: 'Reem Kufi Fun', sans-serif;
 }
@@ -52,6 +52,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     gap: 3rem;
@@ -68,7 +69,7 @@ nav a:hover {
 }
 
 nav .icon {
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: var(--cream);
 }
 
@@ -92,9 +93,10 @@ nav .button a:hover {
 /* info */
 
 #info {
-    padding: 5rem 2rem;
+    padding: 8rem 2rem;
     font-size: 1.5rem;
     margin-bottom: 5rem;
+    height: 100vh;
 }
 
 .info-content {
@@ -106,7 +108,7 @@ nav .button a:hover {
     display: block;
     font-size: 3rem;
     margin: 1rem 0 1.5rem 0;
-    color: var(--mblue);
+    color: var(--lblue);
     font-family: var(--reem-kufi);
 
 }
@@ -114,14 +116,14 @@ nav .button a:hover {
 /* project */
 
 #projects {
-    padding: 2rem;
-  
+    padding: 2rem;  
 }
 
 .projects-content {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 
 #projects h2 {
     font-size: 2.5rem;
@@ -147,11 +149,14 @@ nav .button a:hover {
     color: var(--lblue);
     font-size: 2.2rem;
     margin-bottom: 0.5rem;
+    font-family: var(--reem-kufi);
 }
 
 #projects .description {
-    background-color: var(--blue);
+    background-color: var(--black);
     padding: 2rem;
+    /* border: 1px solid var(-); */
+    box-shadow: -1px 1px var(--cream);
     border-radius: 10px;
 }
 
@@ -162,6 +167,16 @@ nav .button a:hover {
     display: flex;
     flex-flow: row wrap;
     gap: 1.5rem;
+    font-size: 1.2rem;
+}
+
+#projects .icon {
+    font-size: 2.5rem;
+    color: var(--cream);
+}
+
+#projects .icon:hover {
+    color: var(--lblue);
 }
 
 #projects ul span {
@@ -170,6 +185,52 @@ nav .button a:hover {
 
 #projects .technologies {
     font-family: var(--reem-kufi);
+}
+
+#projects .title {
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.footer-content {
+    width: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3rem;
+}
+
+footer .icon {
+    font-size: 3rem;
+    color: var(--cream);
+}
+
+footer .icon:hover {
+    color: var(--lblue)
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--lblue);
 }
 
 @media (min-width: 800px) {
@@ -221,6 +282,15 @@ nav .button a:hover {
 
     #projects .reverse .project-detail {
         grid-column: 1/7;
+       
+    }
+
+    #projects .reverse .description {
+        box-shadow: 1px 1px var(--cream);
+    }
+
+    #projects .reverse .title {
+        justify-content: flex-start;
     }
 }
 
