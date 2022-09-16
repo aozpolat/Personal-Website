@@ -1,0 +1,14 @@
+* {
+    box-sizing:  border-box;
+}
+
+:root {
+    --black: #0D0D0D;
+    --cream: #F2E7DC;
+    --blue: #027373;
+    --mblue: #038C7F;
+    --lblue: #A9D9D0;
+    --nunito: 'Nunito', sans-serif;
+    --reem-kufi: 'Reem Kufi Fun', sans-serif;
+}
+
